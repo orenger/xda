@@ -1,0 +1,109 @@
+@import "../../../assets/styles/_colors.scss";
+
+.error-pages {
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(circle at 50% 7%, #ffffff, #e9e9e9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main-card {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 920px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.2), 0 7px 37px 6px rgba(0, 0, 0, 0.12), 0 20px 31px 3px rgba(0, 0, 0, 0.14);
+    text-align: center;
+    background-color: white;
+    .error-container {
+      width: 100%;
+      .logo {
+        text-align: center;
+        margin: 0px auto 14px auto;
+        display: block;
+        position: relative;
+        img {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      .logo::after {
+        content: '';
+        border-bottom: solid 1px #ececec;
+        position: absolute;
+        bottom: 0px;
+        width: 94%;
+        right: 3%;
+      }
+      .title{
+        text-align: center;
+        color: $error-title-color;
+        max-width: 450px;
+        margin: 0 auto;
+        margin-bottom: 18px;
+      }
+      h1.title {
+        font-size: 55px;
+      }
+      h4.title {
+        font-size: 30px;
+      }
+      .button {
+        line-height: 62px;
+        font-size: 31px;
+        font-weight: 600;
+        max-width: 320px;
+        margin: 25px auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .error-pages {
+    .main-card {
+      max-width: 840px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .error-pages {
+    .main-card {
+      max-width: 720px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .error-pages {
+    .main-card {
+      min-height: 100vh;
+      padding: 40px 8%;
+
+      .error-container {
+        width: 100%;
+        .logo img {
+          width: 100px;
+        }
+        .title{
+          max-width: 320px;
+        }
+        h1.title{
+          font-size: 30px;
+        }
+        h4.title{
+          font-size: 20px;
+        }
+        .button {
+          line-height: 48px;
+          font-size: 34px;
+        }
+      }
+    }
+  }
+}

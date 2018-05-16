@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+/* heebo-300 - latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Heebo-Light.ttf");
+  /* IE9 Compat Modes */
+  src: local("Heebo Light"), local("Heebo-Light"), url("../fonts/Heebo-Light.ttf?#iefix") format("embedded-opentype"), url("../fonts/Heebo-Light.ttf") format("woff2"), url("../fonts/Heebo-Light.ttf") format("woff"), url("../fonts/Heebo-Light.ttf") format("truetype"), url("../fonts/Heebo-Light.ttf#Heebo") format("svg");
+  /* Legacy iOS */ }
+/* heebo-regular - latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Heebo-Regular.ttf");
+  /* IE9 Compat Modes */
+  src: local("Heebo"), local("Heebo-Regular"), url("../fonts/Heebo-Regular.ttf?#iefix") format("embedded-opentype"), url("../fonts/Heebo-Regular.ttf") format("woff2"), url("../fonts/Heebo-Regular.ttf") format("woff"), url("../fonts/Heebo-Regular.ttf") format("truetype"), url("../fonts/Heebo-Regular.ttf#Heebo") format("svg");
+  /* Legacy iOS */ }
+/* heebo-500 - latin */
+@font-face {
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Heebo-Medium.ttf");
+  /* IE9 Compat Modes */
+  src: local("Heebo Medium"), local("Heebo-Medium"), url("../fonts/Heebo-Medium.ttf?#iefix") format("embedded-opentype"), url("../fonts/Heebo-Medium.ttf") format("woff2"), url("../fonts/Heebo-Medium.ttf") format("woff"), url("../fonts/Heebo-Medium.ttf") format("truetype"), url("../fonts/Heebo-Medium.ttf#Heebo") format("svg");
+  /* Legacy iOS */ }
+body {
+  font-size: 16px;
+  font-weight: normal;
+  color: black;
+  font-family: 'Heebo', sans-serif;
+  direction: rtl;
+  background-color: #f4f4f4; }
+  body * {
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif; }
+
+.button {
+  transition: box-shadow .3s;
+  border: none;
+  background-color: #09008b;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 11px 15px 0 rgba(0, 0, 0, 0.2), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14); }
+  .button.is-full-width {
+    width: 100%;
+    display: block; }
+
+.button:hover {
+  box-shadow: none; }
+
+.contact_flash {
+  background: transparent;
+  border: none;
+  border-right: solid 2px rgba(255, 255, 255, 0.3);
+  border-left: solid 2px rgba(255, 255, 255, 0.3);
+  padding: 0px 30px;
+  margin-left: 35px;
+  position: relative; }
+  .contact_flash .num_flash {
+    width: 20px;
+    height: 20px;
+    border-radius: 108px;
+    background-color: #f33300;
+    display: block;
+    position: absolute;
+    right: 23px;
+    top: -8px;
+    color: #ffffff;
+    font-weight: 500; }
+
+.flashes_clouse {
+  background: transparent;
+  border: none; }
+
+.field.is-full-width {
+  width: 100%;
+  display: block; }
+
+.input {
+  border-radius: 5px;
+  border: solid 1px #979797;
+  line-height: 46px;
+  font-size: 18px;
+  padding-right: 15px;
+  width: 100%; }
+
+.label_for {
+  font-size: 16px;
+  color: #4a4a4a;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  display: block; }
+
+@media (max-width: 1200px) {
+  .input {
+    line-height: 34px; } }
+@media (max-width: 767px) {
+  .input {
+    line-height: 32px; }
+
+  .field .label_for {
+    color: #09008b; } }
+h1.title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #09008b; }
+
+.box_title {
+  font-size: 30px;
+  color: #000000;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-top: 7px; }
+  @media all and (max-width: 850px) {
+    .box_title {
+      font-size: 22px; } }
+
+.auth-pages {
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(circle at 50% 7%, #ffffff, #e9e9e9);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .auth-pages .main-card {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 920px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.2), 0 7px 37px 6px rgba(0, 0, 0, 0.12), 0 20px 31px 3px rgba(0, 0, 0, 0.14); }
+    .auth-pages .main-card .image-side {
+      width: 50%;
+      background-image: url(../imgs/image.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .auth-pages .main-card .form-side {
+      width: 50%;
+      background-color: #ffffff;
+      height: 100%;
+      background: #ffffff;
+      position: relative;
+      text-align: center;
+      padding-bottom: 30px; }
+      .auth-pages .main-card .form-side .auth_form {
+        max-width: 340px;
+        padding-right: 9px;
+        padding-left: 9px;
+        width: 100%;
+        text-align: right;
+        display: block;
+        margin: 0px auto;
+        box-sizing: border-box; }
+      .auth-pages .main-card .form-side .logo {
+        text-align: center;
+        margin: 0px auto 14px auto;
+        display: block;
+        position: relative; }
+        .auth-pages .main-card .form-side .logo img {
+          padding-top: 10px;
+          padding-bottom: 10px; }
+      .auth-pages .main-card .form-side .logo::after {
+        content: '';
+        border-bottom: solid 1px #ececec;
+        position: absolute;
+        bottom: 0px;
+        width: 94%;
+        right: 3%; }
+      .auth-pages .main-card .form-side h1.title {
+        text-align: center;
+        margin-bottom: 18px; }
+      .auth-pages .main-card .form-side .input {
+        display: block;
+        margin-bottom: 14px; }
+      .auth-pages .main-card .form-side .button {
+        line-height: 62px;
+        font-size: 31px;
+        font-weight: 600;
+        margin: 25px 0px 16px 0px; }
+      .auth-pages .main-card .form-side .forget_password {
+        color: #4a4a4a;
+        font-size: 16px;
+        margin-top: 30px;
+        display: block; }
+      .auth-pages .main-card .form-side .join_service {
+        margin-top: 16px; }
+        .auth-pages .main-card .form-side .join_service svg {
+          transform: translate(0px, 2px); }
+      .auth-pages .main-card .form-side .join_service a {
+        color: #09008b;
+        font-size: 18px;
+        font-weight: 500;
+        padding-left: 13px; }
+
+@media (max-width: 1200px) {
+  .auth-pages .main-card {
+    max-width: 840px; } }
+@media (max-width: 992px) {
+  .auth-pages .main-card {
+    max-width: 720px; } }
+@media (max-width: 767px) {
+  .auth-pages .main-card {
+    background-image: url(../imgs/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 40px 8%; }
+    .auth-pages .main-card .image-side {
+      display: none; }
+    .auth-pages .main-card .form-side {
+      width: 100%; }
+      .auth-pages .main-card .form-side .logo img {
+        width: 100px; }
+      .auth-pages .main-card .form-side .auth_form {
+        padding: 0px 35px; }
+      .auth-pages .main-card .form-side .button {
+        line-height: 48px;
+        font-size: 34px; }
+      .auth-pages .main-card .form-side .forget_password {
+        margin-top: 0px; }
+      .auth-pages .main-card .form-side .join_service {
+        margin-top: 25px; } }
+
+/*# sourceMappingURL=style.css.map */

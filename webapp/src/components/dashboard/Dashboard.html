@@ -1,0 +1,13 @@
+<section style="display: inherit;width: 100%;">
+
+    <!-- Container -->
+    <customer class="article" v-if="isCustomer">
+        <customer-dashboard v-if="showHeaderAndMenu"></customer-dashboard>
+        <router-view v-else></router-view>
+    </customer>
+
+    <home class="article" v-else>
+        <router-view></router-view>
+    </home>
+
+</section>

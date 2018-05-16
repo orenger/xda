@@ -1,0 +1,30 @@
+<div class="auth-pages" v-if="!isLoading">
+    <div class="main-card">
+        <div class="form-side">
+            <div class="logo">
+                <img src="../../../../assets/imgs/logo-2-1.png"/>
+            </div>
+            <h1 class="title">{{$t(loginHeaderTitle)}}</h1>
+            <form-widget @submitForm="onSubmit" :buttonText="buttonText" :serverErrorMessage="serverErrorMessage">
+                <div slot="formContent">
+
+                    <slot name="before"></slot>
+
+                    <number-field-widget :title="'id_number'" v-if="!isPasswordExpired" :inputName="$t('id_number')"
+                                 v-model="auth.idNumber" :initialValue="auth.idNumber" :isRequired="true"></number-field-widget>
+
+                    <password-field-widget :title="passwordLabel" v-if="!isForgotPassword" :inputName="$t('password')"
+                                 v-model="auth.password" :initialValue="auth.password" :isRequired="true"></password-field-widget>
+
+                    <slot name="extension"></slot>
+
+                </div>
+            </form-widget>
+            <router-link-widget class="forget_password" v-if="showForgot" :to="{ name: 'forgot'}">{{$t('forgot_password')}}
+            </router-link-widget>
+        </div>
+        <div class="image-side">
+
+        </div>
+    </div>
+</div>

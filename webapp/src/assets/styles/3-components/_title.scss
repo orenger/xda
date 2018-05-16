@@ -1,0 +1,18 @@
+h1.title {
+  font-size: 30px;
+  font-weight: 500;
+  color: $color-blue;
+}
+
+.box_title {
+  font-size: 30px;
+  color: #000000;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-top: 7px;
+
+  @media all and (max-width: 850px) {
+    font-size: 22px;
+  }
+
+}

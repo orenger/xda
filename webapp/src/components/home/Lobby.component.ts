@@ -3,6 +3,7 @@ import BaseComponent from "@/base/BaseComponent";
 import HeaderBar from './header/Header.component'
 import FooterBar from './footer/Footer.component'
 import About from './about/About.component'
+import Services from './services/Services.component'
 import Contact from './contact/Contact.component'
 
 @Component({
@@ -10,6 +11,7 @@ import Contact from './contact/Contact.component'
         HeaderBar,
         FooterBar,
         About,
+        Services,
         Contact
     }
 })

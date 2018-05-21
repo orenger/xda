@@ -1,0 +1,22 @@
+// Mixin
+@mixin xda-translate($translatex) {
+  -moz-transform: translateX($translatex);
+  -webkit-transform: translateX($translatex);
+  -ms-transform: translateX($translatex);
+  -o-transform: translateX($translatex);
+  transform: translateX($translatex);
+}
+@mixin transition($transition) {
+  -moz-transition:    all $transition ease;
+  -o-transition:      all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: 		all $transition ease;
+  transition:         all $transition ease;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

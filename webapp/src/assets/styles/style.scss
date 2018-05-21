@@ -1,0 +1,29 @@
+// import common styles
+@import './_colors.scss';
+@import './_variables.scss';
+@import './_mixins.scss';
+
+// import pages styles
+@import './pages/header.scss';
+@import './pages/footer.scss';
+@import './pages/about.scss';
+@import './pages/contact.scss';
+@import './pages/services.scss';
+
+#xda-page{
+  padding-top: 80px;
+}
+
+#xda-services,
+#xda-about,
+#xda-contact{
+  padding-bottom: 6em;
+  @media screen and (max-width: $screen-sm) {
+    padding: 3em 0;
+  }
+}
+#xda-services,
+#xda-about,
+#xda-contact{
+  padding-top: 6em;
+}

@@ -15,6 +15,9 @@ var VueScrollTo = require('vue-scrollto');
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
+// import style scss for all
+import './assets/styles/style.scss'
+
 import {messages} from './lang/heValidation'
 
 Vue.use(VeeValidate, {

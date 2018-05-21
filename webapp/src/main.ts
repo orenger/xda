@@ -8,6 +8,8 @@ import VueProgressBar from "vue-progressbar";
 import VeeValidate from 'vee-validate';
 import RouterLinkWidget from '@/components/widgets/RouterLinkWidget.vue';
 
+var VueScrollTo = require('vue-scrollto');
+
 // import jQuery  from 'jquery'
 // Vue.use(jQuery)
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,7 +27,7 @@ Vue.use(VeeValidate, {
 
 Vue.component('router-link-widget', RouterLinkWidget)
 
-const options = {
+const progressBarOptions = {
     color: '#bffaf3',
     failedColor: '#874b4b',
     thickness: '5px',
@@ -39,7 +41,17 @@ const options = {
     inverse: false
 }
 
-Vue.use(VueProgressBar, options)
+Vue.use(VueProgressBar, progressBarOptions)
+
+
+const scrollToOptions = {
+    container: "body",
+    duration: 500,
+    easing: "ease",
+    offset: 0
+}
+// You can also pass in the default options
+Vue.use(VueScrollTo, scrollToOptions)
 
 // Authenticate each page is authorized - todo
 // import axios from 'axios'

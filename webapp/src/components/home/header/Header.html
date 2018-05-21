@@ -1,13 +1,18 @@
 <header id="xda-header" role="banner">
     <div class="container">
         <div class="header-inner">
-            <h1><i class="sl-icon-energy"></i><a>XDA</a></h1>
-            <nav role="navigation">
-                <ul>
-                    <li><a class="active">{{ $t('home_header_title') }}</a></li>
-                    <li><a href="blog.html">{{ $t('about_header_title') }}</a></li>
-                </ul>
-            </nav>
+            <div class="float-left">
+                <h1><i class="sl-icon-energy"></i>XDA</h1>
+            </div>
+            <div class="float-right">
+                <nav role="navigation">
+                    <ul>
+                        <li class="float-right"><a v-scroll-to="'#xda-page'" class="active">{{ $t('home_header_title') }}</a></li>
+                        <li class="float-right"><a v-scroll-to="'#xda-about'">{{ $t('about_header_title') }}</a></li>
+                        <li class="float-right"><a v-scroll-to="'#xda-contact'">{{ $t('about_contact_title') }}</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </header>

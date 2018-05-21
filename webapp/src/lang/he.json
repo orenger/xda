@@ -1,6 +1,7 @@
 {
-  "home_header_title": "Home",
-  "about_header_title": "About",
+  "home_header_title": "בית",
+  "about_header_title": "אודות",
+  "about_contact_title": "צור קשר",
   "search_employee": "חיפוש עובד",
   "full_name": "שם מלא",
   "by_id_number": "לפי תעודת זהות",

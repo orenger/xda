@@ -8,6 +8,10 @@ import VueProgressBar from "vue-progressbar";
 import VeeValidate from 'vee-validate';
 import RouterLinkWidget from '@/components/widgets/RouterLinkWidget.vue';
 
+// import jQuery  from 'jquery'
+// Vue.use(jQuery)
+import 'bootstrap';
+
 import {messages} from './lang/heValidation'
 
 Vue.use(VeeValidate, {

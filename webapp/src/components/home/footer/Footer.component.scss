@@ -1,31 +1,6 @@
 @import '../../../assets/styles/_colors.scss';
 @import '../../../assets/styles/_variables.scss';
 
-$font-primary: 'Roboto', Arial, sans-serif;
-$font-secondary: 'Playfair Display', Arial, serif;
-
-// Overrides
-$grid-gutter-width: 40px !default;
-$border-radius-base:  4px !default;
-$padding-base-vertical: 14px !default;
-
-$brand-primary: #1FB57B !default;
-$brand-secondary: #2D4059 !default;
-
-$brand-white: #fff;
-$brand-black: #000;
-$brand-darker: #444;
-$brand-gray: #ccc;
-$brand-lighter: #e9e9e9;
-$brand-body-color: #818892;
-$brand-selection-color: #f9f6f0;
-$brand-overlay-color: #3b3d40;
-$brand-bg-color: $brand-white;
-
-$input-border-focus:  $brand-primary !default;
-$form-group-margin-bottom:       30px !default;
-
-
 #fh5co-footer {
   direction: ltr;
   padding: 7em 0;
@@ -33,10 +8,7 @@ $form-group-margin-bottom:       30px !default;
   width: 100%;
   position: relative;
   background: lighten($brand-black, 15%);
-  div[class^="col"]{
-    //display: flex;
-  }
-  @media screen and (max-width: $screen-sm) {
+  @media screen and (max-width: 992px) {
     padding: 3em 0;
   }
   h2, h3, h4 {

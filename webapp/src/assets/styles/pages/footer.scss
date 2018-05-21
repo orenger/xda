@@ -36,18 +36,15 @@
     color: rgba(255,255,255,.4);
     text-decoration: none!important;
     display: block;
+    margin-bottom: 5px;
     &:hover {
       color: $brand-white;
     }
   }
   .xda-social {
-    a{
-      font-size: 16px;
-    }
     i{
-      float: left;
       font-size: 20px;
-      width: 40px;
+      width: 30px;
     }
   }
 }

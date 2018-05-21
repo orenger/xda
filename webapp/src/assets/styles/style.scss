@@ -3,6 +3,9 @@
 @import './_variables.scss';
 @import './_mixins.scss';
 
+// import font awesome icons
+@import '../fontawesome/css/fontawesome-all.min.css';
+
 // import pages styles
 @import './pages/header.scss';
 @import './pages/footer.scss';

@@ -39,23 +39,5 @@
 </script>
 
 <style lang="scss">
-    .server-error-container,
-    .label_for.is-error{
-        color:#ff0120;
-    }
-    .server-error-container{
-        text-align: center;
-    }
-    .label_for.is-error{
-        font-weight: bold;
-    }
-    .input.is-error{
-        border-color: #ff001f;
-        outline: none;
-        margin-bottom: 5px !important;
-    }
-    .help.is-error{
-        color: #ff001f;
-    }
 
 </style>

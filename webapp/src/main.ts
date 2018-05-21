@@ -10,7 +10,8 @@ import RouterLinkWidget from '@/components/widgets/RouterLinkWidget.vue';
 
 // import jQuery  from 'jquery'
 // Vue.use(jQuery)
-import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 import {messages} from './lang/heValidation'
 

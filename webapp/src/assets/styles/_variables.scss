@@ -1,5 +1,5 @@
 // Mixin
-@mixin fh5co-translate($translatex) {
+@mixin xda-translate($translatex) {
   -moz-transform: translateX($translatex);
   -webkit-transform: translateX($translatex);
   -ms-transform: translateX($translatex);

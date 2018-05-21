@@ -3,11 +3,11 @@
         <div class="main-card">
             <div class="form-side">
                 <div class="logo">
-                    <img src="../../../../../assets/imgs/logo-2-1.png"/>
+                    <img src="../../../../../assets/logo.png"/>
                 </div>
                 <h1 class="title">{{ $t('email_sent_header') }}</h1>
                 <div class="email-sent-container">
-                    <img class="email-img" src="../../../../../assets/imgs/mail-sent.svg"/>
+                    <img class="email-img" src="../../../../../assets/logo.png"/>
                     <span class="email-message">
                         {{ $t('email_sent_message') }}
                     </span>
@@ -31,22 +31,22 @@
 </script>
 <style lang="scss" scoped="scoped">
 
-    .auth-pages {
-        .main-card {
-            .form-side {
-                .email-sent-container {
-                    text-align: center;
-                    .email-img {
-                        display: block;
-                        margin: 20px auto;
-                    }
-                    .email-message {
-                        display: inline-block;
-                        width: 60%;
-                    }
-                }
-            }
-        }
-    }
+    /*.auth-pages {*/
+        /*.main-card {*/
+            /*.form-side {*/
+                /*.email-sent-container {*/
+                    /*text-align: center;*/
+                    /*.email-img {*/
+                        /*display: block;*/
+                        /*margin: 20px auto;*/
+                    /*}*/
+                    /*.email-message {*/
+                        /*display: inline-block;*/
+                        /*width: 60%;*/
+                    /*}*/
+                /*}*/
+            /*}*/
+        /*}*/
+    /*}*/
 
 </style>

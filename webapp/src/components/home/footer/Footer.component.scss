@@ -1,19 +1,23 @@
 @import '../../../assets/styles/_colors.scss';
 @import '../../../assets/styles/_variables.scss';
 
-#fh5co-footer {
+#xda-footer {
   direction: ltr;
   padding: 7em 0;
   float: left;
   width: 100%;
   position: relative;
+  color: rgba(255,255,255,.4);
   background: lighten($brand-black, 15%);
+  text-align: center;
+
   @media screen and (max-width: 992px) {
     padding: 3em 0;
   }
   h2, h3, h4 {
     display: block;
     color: rgba($brand-white,.8);
+    width: 100%;
   }
   h3 {
     font-size: 18px;
@@ -28,33 +32,22 @@
     float: left;
     margin-right: 10%;
   }
-  ul {
-    padding: 0;
-    margin: 0;
-    li {
-      padding: 0;
-      margin: 0 0 10px 0;
-      list-style: none;
-      a {
-        color: rgba(255,255,255,.4);
-        text-decoration: none!important;
-        &:hover {
-          color: $brand-white;
-        }
-      }
+  a {
+    color: rgba(255,255,255,.4);
+    text-decoration: none!important;
+    display: block;
+    &:hover {
+      color: $brand-white;
     }
   }
-  .fh5co-social {
-    li {
-      display: block !important;
-      a{
-        font-size: 16px;
-      }
-      i{
-        float: left;
-        font-size: 20px;
-        width: 40px;
-      }
+  .xda-social {
+    a{
+      font-size: 16px;
+    }
+    i{
+      float: left;
+      font-size: 20px;
+      width: 40px;
     }
   }
 }

@@ -4,11 +4,11 @@
             <div class="error-container">
 
                 <div class="logo">
-                    <img src="../../assets/imgs/logo-2-1.png"/>
+                    <img src="../../assets/logo.png"/>
                 </div>
 
 
-                <img src="../../assets/imgs/not_found_error.svg"
+                <img src="../../assets/logo.png"
                      class="if_212_2661035">
 
                 <h1 class="title">{{$t('not_found_error_title')}}</h1>

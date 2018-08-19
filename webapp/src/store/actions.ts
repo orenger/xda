@@ -5,7 +5,7 @@ import {LogoutService} from "@/api/Logout.service";
 
 const logoutService: LogoutService = new LogoutService()
 
-export default <ActionTree<RootState, RootState>> {
+export const actions: ActionTree <RootState, RootState> = {
 
     logout: ({commit, dispatch, state}: any, {requestorCallback}: RequestPayload) => {
         logoutService

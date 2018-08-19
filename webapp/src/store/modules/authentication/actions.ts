@@ -17,7 +17,7 @@ const authenticateWithPasswordService: AuthenticateWithPasswordService = new Aut
 const userDetailsService: UserDetailsService = new UserDetailsService()
 const isAuthorizedForPageService: IsAuthorizedForPageService = new IsAuthorizedForPageService()
 
-export default <ActionTree<AuthenticationState, RootState>> {
+export const actions: ActionTree <AuthenticationState, RootState> = {
 
    sendForgotPwdMail: ({commit, dispatch, state}: any, {requestBody, requestorCallback}: RequestPayload) => {
         sendForgotPasswordMailService

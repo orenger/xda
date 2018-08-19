@@ -1,6 +1,6 @@
-import actions from './actions';
-import mutations from './mutations';
-import getters from './getters';
+import {actions} from './actions';
+import {mutations} from './mutations';
+import {getters} from './getters';
 import {UserDetailsResponse} from '@/models/response/UserDetailsResponse';
 import {Module} from 'vuex';
 import {RootState} from '@/store';
@@ -17,7 +17,7 @@ const initialState: AuthenticationState = {
     isAuthorized: false
 }
 
-export default <Module<AuthenticationState, RootState>> {
+export const authentication: Module <AuthenticationState, RootState> = {
     namespaced: true,
     state: initialState,
     getters,

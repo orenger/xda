@@ -54,7 +54,7 @@ export default class LoginContainerComponent extends BaseComponent {
     }
 
     setUserAgent() {
-        var loginAuth = <AuthenticationRequest>this.auth
+        var loginAuth = this.auth as AuthenticationRequest
         loginAuth.siteUrl = document.URL;
         loginAuth.browserInfo = navigator.userAgent;
         loginAuth.isMobile = this.isItMobile();

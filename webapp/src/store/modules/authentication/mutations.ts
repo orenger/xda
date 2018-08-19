@@ -9,7 +9,7 @@ interface LoginAuthPayload {
     obfuscatedPhoneNum: string
 }
 
-export default <MutationTree<AuthenticationState>> {
+export const mutations: MutationTree <AuthenticationState> = {
 
     setUserDetails: (state, userDetails) => {
         state.userDetails = userDetails

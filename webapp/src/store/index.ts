@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Vuex, {StoreOptions} from 'vuex'
-import authentication from './modules/authentication'
+import {authentication} from './modules/authentication'
 import {UserId} from "@/models/UserId.model"
-import actions from './actions'
-import mutations from './mutations'
-import getters from './getters'
+import {actions} from './actions'
+import {mutations} from './mutations'
+import {getters} from './getters'
 // import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex);
